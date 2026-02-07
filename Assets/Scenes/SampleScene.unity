@@ -885,7 +885,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3337038689812066966, guid: f73eda10b65804eeeacf63c91f00feda, type: 3}
+  m_Sprite: {fileID: 4483504832982471387, guid: e62ab8600eafb49f68dbebdbd5dc17ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8e3e5fb5b8b41b3a7da8ed32322fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  trashPrefab: {fileID: 0}
+  trashPrefab: {fileID: 8750582387103048077, guid: 66acf40bccd8a4f029d930918cb6cdd1, type: 3}
   spawnRate: 2
   spawnXRange: 3
   spawnYPos: 6

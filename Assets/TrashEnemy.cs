@@ -12,14 +12,20 @@ public class TrashEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the thing we hit is the Player
         if (other.CompareTag("Player"))
         {
-            // Tell the PlayerHealth script to lose a heart
-            other.GetComponent<PlayerHealth>().TakeDamage();
+            PlayerHealth health = other.GetComponent<PlayerHealth>();
+            if (health != null)
+            {
+                health.TakeDamage();
+            }
             
-            // Destroy the trash so it doesn't hit twice
-            Destroy(gameObject); 
+            // This is the safety check
+            if (this != null && gameObject != null)
+            {
+                Destroy(gameObject);
+                return; // STOP the script here so it doesn't look for more code
+            }
         }
     }
 }

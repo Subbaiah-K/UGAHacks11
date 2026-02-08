@@ -35,8 +35,7 @@ As you progress through levels, watch the world transform and become cleaner wit
 - Music:
   - Noteflight (Sheet music composition)
   - Soundtrap (Instrumentation platform)
--API's Utilized:
-LovyanGFX.hpp - Graphics library for esb32
+- API's Utilized: LovyanGFX.hpp - Graphics library for esb32
 
 ## Challanges Faced.
 The Hardware Dream We Didn't Fully Achieve: Initially, we didn't just want a game; we wanted a physical experience. Our vision was a custom touchpad controller where you'd draw spells with your finger and watch them materialize in-game. The ESP32 calibration was difficult, and detecting hand-drawn shapes in real-time without machine learning meant building geometric pattern-matching from scratch. We continued working through the night until solutions were found, though we couldn't fully implement our initial touchpad vision by the deadline.

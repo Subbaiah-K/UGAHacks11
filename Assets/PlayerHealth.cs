@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI; 
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -33,9 +34,16 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Game Over!");
             
-            // Find the manager and trigger the lose transition
-            // This will now call the function in GameFlowManager
-            FindObjectOfType<GameFlowManager>().LoseLevel();
+            // 1. Tell the manager to handle any internal win/loss logic
+            GameFlowManager manager = Object.FindFirstObjectByType<GameFlowManager>();
+            if (manager != null)
+            {
+                manager.LoseLevel();
+            }
+
+            // 2. Load the actual Game Over Scene we just created
+            // Make sure the name in quotes matches your Scene filename exactly!
+            SceneManager.LoadScene("GameOverScene"); 
         }
         else
         {

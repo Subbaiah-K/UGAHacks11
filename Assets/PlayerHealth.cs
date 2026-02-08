@@ -1,13 +1,11 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UI; // REQUIRED: Allows the script to see your Heart Images
+using UnityEngine.UI; 
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHearts = 3;
     public float iFrameDuration = 1.5f;
-    
-    // This creates the field in the Inspector for you to drag your hearts into
     public Image[] heartIcons; 
 
     private int currentHearts;
@@ -26,7 +24,6 @@ public class PlayerHealth : MonoBehaviour
 
         currentHearts--;
         
-        // UI Logic: Disable the heart icon corresponding to the life lost
         if (currentHearts >= 0 && currentHearts < heartIcons.Length)
         {
             heartIcons[currentHearts].enabled = false; 
@@ -35,8 +32,10 @@ public class PlayerHealth : MonoBehaviour
         if (currentHearts <= 0)
         {
             Debug.Log("Game Over!");
-            // Restarts the game
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            
+            // Find the manager and trigger the lose transition
+            // This will now call the function in GameFlowManager
+            FindObjectOfType<GameFlowManager>().LoseLevel();
         }
         else
         {

@@ -46,7 +46,7 @@ The First-Timer's Gauntlet: None of us had used Unity before, so we learned game
 ## What's next for Glint and Grime
 We want to fully realize our hardware vision by building a custom arcade-style controller with complete gesture recognition with circles for fire spells, zigzags for lightning, and more complex glyph patterns. We plan to add a deeper story that reveals Lyra's backstory and motivations as players progress, explaining how she gains potions and grows stronger to ultimately defeat Midas. We want to add more obstacle types like plastic oceans, smog clouds, e-waste mountains, and increase difficulty scaling. We're planning to integrate AI-generated environmental tips that appear between levels, teaching players real-world sustainability actions they can take. Most importantly, we want to partner with schools and environmental organizations to use Glint and Grime as an educational tool, turning education into fun while connecting it to real-world impact.
 
-## ⚠️ **IMPORTANT DISCLAIMER**
+## IMPORTANT DISCLAIMER
  **🚨 ALL ASSETS ARE ORIGINAL WORK 🚨** 
 Every pixel of art, every note of music, and every line of code in this project was created **from scratch** by our team during UGAHacks 11 (February 6-8, 2026). 
 

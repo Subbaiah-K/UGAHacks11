@@ -29,5 +29,5 @@ When designing the graphics, we chose a pixel art style as we felt that it fit w
 
 We had many problems programming the entire project, as we encountered bugs everywhere. We were also struggling to calibrate the touch pad with our video game. We also struggled with designing the art and the music to fit the video game. The four of us do not have much experience when it comes to game design, and we were a little overly ambitious when designing the project. We overcame this through teamwork, helping each other when we encountered challenges and filling in for each other’s weaknesses. We also utilized any and all resources available to us in order to find solutions to our issues.
 
-APIs:
+**APIs:**
 LovyanGFX.hpp - Graphics library for esb32
